@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a, button {
+    transition: all ease-in-out 0.2s;
+}
+
+body {
+    background: #023814;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header a:hover {
+    color: #6bca8b;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.navbar li a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 15px !important;
+    margin-left: 10px;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #6bca8b !important;
+    border-color: #6bca8b;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #fff;
+}
+
+@media(max-width: 991px) {
+    .navbar-nav {
+        background-color: #fff;
+        margin: 0;
+        padding: 30px 0;
+    }
+
+    .navbar li a {
+        color: #0B666A;
+    }
+}
+
+.home {
+    height: 100vh;
+    min-height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ededed;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3d8d58;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin:  20px 0 40px;
+}
+
+.home-content .btn-box {   
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a, .form-wrap .btn-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #3d8d58;
+    border: 2px solid #3d8d58;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 14px;
+    line-height: 1;
+}
+
+.btn-box a:hover,
+.btn-primary:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.home-sci a:hover {
+    border: 2px solid #3d8d58;
+    color: #fff;
+    background: #3d8d58;
+    
+}
+
+.banner-content, .photo {
+    flex-shrink: 0;
+    width: 50%;
+    max-width: 50%;
+}
+
+.banner-content {
+    padding-right: 30px;
+}
+
+.photo {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo a {
+    display: block;
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    background: url(/assets/images/myself.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media(max-width: 991px) {
+    .home {
+        padding-top: 7em;
+    }
+
+    .banner-content, .photo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .banner-content {
+        order: 2;
+        padding-right: 0;
+    }
+
+    .photo {
+        order: 1;
+        height: auto;
+        margin-bottom: 2em;
+    }
+
+    .home-sci {
+        position: relative;
+        bottom: auto;
+        padding: 3em 0;
+        margin: 0 auto;
+    }
+
+    .home-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .home-content .btn-box {
+        margin: 0 auto;
+    }
+
+    .home-content h1 {
+        font-size: 46px;
+    }
+    
+    .home-content h3 {
+        font-size: 22px;
+    }
+}
+
+
+@media(max-width: 767px) {
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+    
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .photo a {
+        height: 380px;
+        width: 380px;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .photo a {
+        height: 280px;
+        width: 280px;
+    }
+}
+
+
+/* ============================ABOUT ME===================================== */
+.wrapper h1 {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+
+}
+
+@media(max-width: 991px) {
+    .container {
+        padding-top: 7em;
+    }
+
+    .wrapper {
+        text-align: center;
+    }
+}
+
+
+/* ============================CONTACT===================================== */
+.content-contact {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home-sci2 {
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.home-sci2 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 35px;
+    color: #ededed;
+    text-decoration: none;
+    margin: 0 20px 40px 20px;
+
+    
+}
+
+.home-sci2 a:hover {
+    border: 2px solid #3d8d58;
+    color: #fff;
+    background: #3d8d58;
+    
+}
+
+.error small{
+    color: red;
+}
+
+
+/* ============================SKILLS===================================== */
+.logo-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.logo-wrap li {
+    width: 33.333333%;
+    text-align: center;
+}
+
+.logo-wrap li a {
+    display: block;
+    position: relative;
+    height: 206px;
+    width: 206px;
+}
+
+.logo-wrap li a:before {
+    content: '';
+    -webkit-animation: pulse 2s linear 1s infinite;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    scale: 0.9;
+    transition: all ease-in-out 0.2s;
+    opacity: 0;
+}
+
+.logo-wrap li a img {
+    scale: 1;
+    transition: all ease-in-out 0.2s;
+    max-width: 100%;
+    height: auto;   
+   
+}
+
+.logo-wrap li a:hover:before {
+    scale: 1.1;
+    opacity: 1;
+}
+
+.logo-wrap li a:hover img {
+    scale: 1.2;
+   
+}
+
+@-webkit-keyframes pulse {
+    0% { box-shadow:0 0 8px #3d8d58, inset 0 0 8px #3d8d58; }
+    50% { box-shadow:0 0 24px #3d8d58, inset 0 0 24px #3d8d58; }
+    100% { box-shadow:0 0 8px #3d8d58, inset 0 0 8px #3d8d58; }
+  }
+
+  @media(max-width: 1199px) {
+    .logo-wrap li a {
+        height: 170px;
+        width: 170px;
+    }
+
+    .logo-wrap {
+        max-width: 600px;
+    }
+    
+  }
+
+  @media(max-width: 767px) {
+    .logo-wrap {
+        display: block;
+    }
+
+    .logo-wrap li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-wrap li a {
+        margin: 0 auto;
+    }
+  }
+/* ============================PROJECTS===================================== */
+
+
+.card {
+    width: 350px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.card-body  a:hover {
+    background-color: #0B666A;
+    color: #ededed;
+}
+
+@media(max-width: 767px) {
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Bubbles */
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: -5%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 5%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 10%;
+	top: 40%;
+	
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 0;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 30%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 50%;
+	top: 0;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 65%;
+	top: 70%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 10%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 90%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+    background-color: #034b1b;
+	
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
