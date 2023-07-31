@@ -190,7 +190,7 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 100%;
-    background: url(/assets/images/myself.jpg) no-repeat;
+    background: url(./assets/images/myself.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
