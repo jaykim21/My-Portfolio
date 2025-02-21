@@ -381,6 +381,7 @@ body {
     width: 350px;
     margin: 0 auto;
     max-width: 100%;
+    margin-bottom: 50px;
 }
 
 .card-body  a:hover {
