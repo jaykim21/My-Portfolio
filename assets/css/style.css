@@ -337,92 +337,42 @@ body {
 
 /* ============================SKILLS===================================== */
 .logo-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    max-width: 700px;
     margin: 0 auto;
 }
 
-.logo-wrap li {
-    width: 33.333333%;
-    text-align: center;
+.logo-wrap .content-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
-.logo-wrap li a {
+.logo-wrap .content-logo a {
     display: block;
-    position: relative;
-    height: 206px;
-    width: 206px;
+    
 }
 
-.logo-wrap li a:before {
-    content: '';
-    -webkit-animation: pulse 2s linear 1s infinite;
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    scale: 0.9;
-    transition: all ease-in-out 0.2s;
-    opacity: 0;
-}
-
-.logo-wrap li a img {
+.logo-wrap .content-logo a img {
     scale: 1;
     transition: all ease-in-out 0.2s;
-    max-width: 100%;
-    height: auto;   
-   
+    max-width: 206px;
+    width: 100%;
+    height: auto;
 }
 
-.logo-wrap li a:hover:before {
+
+.logo-wrap .content-logo a:hover img {
     scale: 1.1;
-    opacity: 1;
-}
-
-.logo-wrap li a:hover img {
-    scale: 1.2;
    
 }
-
-@-webkit-keyframes pulse {
-    0% { box-shadow:0 0 8px #3d8d58, inset 0 0 8px #3d8d58; }
-    50% { box-shadow:0 0 24px #3d8d58, inset 0 0 24px #3d8d58; }
-    100% { box-shadow:0 0 8px #3d8d58, inset 0 0 8px #3d8d58; }
-  }
 
   @media(max-width: 1199px) {
-    .logo-wrap li a {
-        height: 170px;
-        width: 170px;
-    }
-
-    .logo-wrap {
-        max-width: 600px;
-    }
+    
     
   }
 
   @media(max-width: 767px) {
-    .logo-wrap {
-        display: block;
-    }
-
-    .logo-wrap li {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .logo-wrap li a {
-        margin: 0 auto;
-    }
+    
   }
 /* ============================PROJECTS===================================== */
 
