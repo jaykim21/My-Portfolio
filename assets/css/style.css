@@ -376,12 +376,28 @@ body {
   }
 /* ============================PROJECTS===================================== */
 
+.wrapper {
+    padding-top: 6rem;
+}
+
+.wrapper-card {
+    padding-bottom: 30px;
+}
 
 .card {
     width: 350px;
     margin: 0 auto;
     max-width: 100%;
-    margin-bottom: 50px;
+    height: 100%;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+
+.card-body a {
+    position: absolute;
+    bottom: 20px;
+    left: 1rem;
 }
 
 .card-body  a:hover {
