@@ -80,3 +80,4 @@ contact.addEventListener("submit", (event) => {
     localStorage.setItem('contactObj', JSON.stringify(contactObj));
     console.log('Form data saved to local storage:', contactObj);
 });
+

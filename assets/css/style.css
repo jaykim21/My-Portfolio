@@ -12,7 +12,7 @@ a, button {
 }
 
 body {
-    background: #023814;
+    background: #151b54;
     color: #ededed;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .header a:hover {
-    color: #6bca8b;
+    color: #00ccff;
 }
 
 .logo {
@@ -41,21 +41,26 @@ body {
     margin-left: 0;
 }
 
+
+nav.scrolled {
+    background-color: #0484fc;
+}
+
 .navbar li a {
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
     padding: 5px 15px !important;
-    margin-left: 10px;
+    margin: 0 10px;
     transition: .3s;
     border: 2px solid transparent;
 }
 
 .navbar li a:hover,
 .navbar li a.active {
-    color: #6bca8b !important;
-    border-color: #6bca8b;
+    color: #00ccff !important;
+    border-color: #00ccff;
 }
 
 .navbar-toggler {
@@ -74,7 +79,7 @@ body {
     }
 
     .navbar li a {
-        color: #0B666A;
+        color: #00ccff;
     }
 }
 
@@ -102,7 +107,7 @@ body {
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
-    color: #3d8d58;
+    color: #00ccff;
 }
 
 .home-content p {
@@ -121,8 +126,8 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #3d8d58;
-    border: 2px solid #3d8d58;
+    background: #0d6efd;
+    border: 2px solid #0d6efd;
     border-radius: 8px;
     font-size: 19px;
     color: #fff;
@@ -162,9 +167,9 @@ body {
 }
 
 .home-sci a:hover {
-    border: 2px solid #3d8d58;
+    border: 2px solid #0d6efd;
     color: #fff;
-    background: #3d8d58;
+    background: #0d6efd;
     
 }
 
@@ -190,7 +195,7 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 100%;
-    background: url(../images/myself.jpg) no-repeat;
+    background: url(../images/jaykim.jfif) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -239,6 +244,10 @@ body {
     
     .home-content h3 {
         font-size: 22px;
+    }
+
+    .home-content h4 {
+        font-size: 15px;
     }
 }
 
@@ -324,9 +333,9 @@ body {
 }
 
 .home-sci2 a:hover {
-    border: 2px solid #3d8d58;
+    border: 2px solid #0d6efd;
     color: #fff;
-    background: #3d8d58;
+    background: #0d6efd;
     
 }
 
@@ -616,7 +625,7 @@ body {
     -webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-    background-color: #034b1b;
+    background-color: #67b7da;
 	
     height: 200px;
 	position: absolute;
