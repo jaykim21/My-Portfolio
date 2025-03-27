@@ -283,6 +283,14 @@ nav.scrolled {
     letter-spacing: 1px;
 }
 
+.about {
+    padding-top: 0!important;
+}
+
+.wrapper p {
+    text-align: justify;
+}
+
 .container {
     display: grid;
     align-items: center;
